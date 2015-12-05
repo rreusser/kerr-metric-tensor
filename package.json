@@ -1,0 +1,35 @@
+{
+  "name": "kerr-metric-tensor",
+  "version": "1.0.0",
+  "description": "Calculate the Kerr metric for a rotating black hole",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha test/*.js"
+  },
+  "keywords": [
+    "kerr",
+    "physics",
+    "math",
+    "science",
+    "relativity"
+  ],
+  "author": "Ricky Reusser",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-spawn": "^0.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-latex": "^1.0.1",
+    "gulp-markdown-equations": "^1.2.3",
+    "gulp-pdftocairo": "^0.2.0",
+    "gulp-shell": "^0.5.1",
+    "gulp-tap": "^0.1.3",
+    "mocha": "^2.3.4",
+    "ndarray": "^1.0.18",
+    "ndarray-tests": "^1.3.0",
+    "standard": "^5.4.1"
+  }
+}

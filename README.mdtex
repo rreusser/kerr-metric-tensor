@@ -1,0 +1,52 @@
+# kerr-metric-tensor
+
+> Calculate the Kerr metric for a rotating black hole
+
+## Introduction
+
+This module calculates the metric tensor corresponding to the Kerr metric in Boyer-Lindquist coordinates $(t, r, \theta, \phi)$ [[1]](#references),
+
+$$g_{\mu \nu} = \left(\begin{array}{cccc} g_{tt} & 0 & 0 & g_{t \phi} \\ 0 & \frac{\Sigma}{\Delta} & 0 & 0 \\ 0 & 0 & \Sigma & 0 \\ g_{t \phi} & 0 & 0 & g_{\phi \phi} \end{array}\right)$$
+
+where
+
+<p align="center">$$[plain=true]\begin{eqnarray*} g_{tt} &=& - \left(1 - \frac{2 M r}{\Sigma} \right) \\ g_{t \phi} &=& - \frac{2 M r}{\Sigma} a \sin^2 \theta \\ g_{\phi \phi} &=& \left[ r^2 + a^2 + \frac{2 M r a^2}{\Sigma} \sin^2 \theta \right] \sin^2 \theta  \end{eqnarray*}$$</p>
+
+and
+
+<p align="center">$$[plain=true] \begin{eqnarray*} \Delta(r) &\equiv& r^2 - 2 M r + a^2  \\ \Sigma(r,\theta) &\equiv& r^2 + a^2 \cos^2 \theta \end{eqnarray*}.$$</p>
+
+If you're after efficiency, you'd probably just want to calculate and use the unique non-zero components manually, but this is convenient, easy, and correct.
+
+## Installation
+
+```bash
+$ npm install kerr-metric-tensor
+```
+
+## Usage
+
+#### `require('kerr-metric-tensor')(x, M, a)`
+Given an `Array` or typed array containing coordinates $x = (t, r, \theta, \phi)$, calculate the Kerr metric for a black hole with parameters $M$ and $a$, where $M$ represents the mass of the black hole and $Ma$ the angular momentum.
+*Returns*: the sixteen components of the metric tensor. Since the tensor is symmetric, you can think of the ordering as either row-major or column-major.
+
+## Example
+
+```javascript
+var kerr = require('kerr-metric-tensor')
+
+kerr([1,0,0,0], 1, 1)
+
+// => [ -1, 0, 0, 0,
+//       0, 2, 0, 0,
+//       0, 0, 2, 0,
+//       0, 0, 0, 0 ]
+```
+
+## References
+
+[[1]](#references) Ferrari, V., Gualtieri, L. (2015). *General Relativity* [PDF document]. Retrieved from [http://www.roma1.infn.it/teongrav/VALERIA/TEACHING/RELATIVITA_GENERALE/AA2015_16/dispense.pdf](http://www.roma1.infn.it/teongrav/VALERIA/TEACHING/RELATIVITA_GENERALE/AA2015_16/dispense.pdf)
+
+## License
+
+Copyright (c) 2015, Ricky Reusser
