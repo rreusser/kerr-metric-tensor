@@ -20,8 +20,10 @@ If you're after efficiency, you'd probably just want to calculate and use the un
 
 ## Installation
 
+**Note: I'm just playing around. This module is not adequately tested and so it not on npm.**
+
 ```bash
-$ npm install kerr-metric-tensor
+$ # npm install kerr-metric-tensor
 ```
 
 ## Usage
