@@ -52,4 +52,4 @@ kerr([1,0,0,0], 1, 1)
 
 ## License
 
-Copyright (c) 2015, Ricky Reusser
+ISC License. Copyright (c) 2015, Ricky Reusser
