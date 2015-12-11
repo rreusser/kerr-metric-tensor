@@ -48,7 +48,7 @@ kerr([1,0,0,0], 1, 1)
 
 ## References
 
-[[1]](#references) Ferrari, V., Gualtieri, L. (2015). *General Relativity* [PDF document]. Retrieved from [http://www.roma1.infn.it/teongrav/VALERIA/TEACHING/RELATIVITA_GENERALE/AA2015_16/dispense.pdf](http://www.roma1.infn.it/teongrav/VALERIA/TEACHING/RELATIVITA_GENERALE/AA2015_16/dispense.pdf)
+[[1]](#references) V. Ferrari, L. Gualtieri. (2015). *General Relativity* [PDF document]. Retrieved from [http://www.roma1.infn.it/teongrav/VALERIA/TEACHING/RELATIVITA_GENERALE/AA2015_16/dispense.pdf](http://www.roma1.infn.it/teongrav/VALERIA/TEACHING/RELATIVITA_GENERALE/AA2015_16/dispense.pdf)
 
 ## License
 
