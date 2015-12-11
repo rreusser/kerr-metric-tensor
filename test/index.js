@@ -6,16 +6,17 @@ var ndt = require('ndarray-tests')
 var ndarray = require('ndarray')
 var kerr = require('../')
 
-describe('kerr', function () {
+describe('kerr-metric-tensor', function () {
   it('calculates the metric', function () {
-    var result = ndarray(kerr([1, 0, 0, 0], 1, 1), [4, 4])
+    var result = kerr([1, 0, Math.PI * 0.5, 0], 1, 1)
     var expected = ndarray([
       /* eslint-disable */
       -1, 0, 0, 0,
-       0, 2, 0, 0,
-       0, 0, 2, 0,
-       0, 0, 0, 0], [4, 4])
+       0, 1, 0, 0,
+       0, 0, 1, 0,
+       0, 0, 0, 1
       /* eslint-enable */
-    assert(ndt.equal(result, expected))
+    ], [4, 4])
+    assert(ndt.equal(ndarray(result, [4, 4]), expected))
   })
 })

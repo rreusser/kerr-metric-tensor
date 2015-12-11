@@ -28,7 +28,8 @@ $ npm install kerr-metric-tensor
 
 #### `require('kerr-metric-tensor')(x, M, a)`
 Given an `Array` or typed array containing coordinates $x = (t, r, \theta, \phi)$, calculate the Kerr metric for a black hole with parameters $M$ and $a$, where $M$ represents the mass of the black hole and $Ma$ the angular momentum.
-*Returns*: the sixteen components of the metric tensor. Since the tensor is symmetric, you can think of the ordering as either row-major or column-major.
+
+**Returns**: the sixteen components of the metric tensor. Since the tensor is symmetric, you can think of the ordering as either row-major or column-major.
 
 ## Example
 
