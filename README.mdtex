@@ -16,7 +16,7 @@ and
 
 <p align="center">$$[plain=true] \begin{eqnarray*} \Delta(r) &\equiv& r^2 - 2 M r + a^2  \\ \Sigma(r,\theta) &\equiv& r^2 + a^2 \cos^2 \theta \end{eqnarray*}.$$</p>
 
-If you're after efficiency, you'd probably just want to calculate and use the unique non-zero components manually, but this is convenient, easy, and correct.
+If you're after efficiency, you'd probably just want to calculate and use the unique non-zero components manually, but this is convenient, easy, and once adequately tested, hopefully correct.
 
 ## Installation
 

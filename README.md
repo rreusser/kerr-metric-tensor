@@ -16,7 +16,7 @@ and
 
 <p align="center"><img alt="&bsol;begin&lcub;eqnarray&midast;&rcub; &bsol;Delta&lpar;r&rpar; &amp;&bsol;equiv&amp; r&Hat;2 - 2 M r &plus; a&Hat;2  &bsol;&bsol; &bsol;Sigma&lpar;r&comma;&bsol;theta&rpar; &amp;&bsol;equiv&amp; r&Hat;2 &plus; a&Hat;2 &bsol;cos&Hat;2 &bsol;theta &bsol;end&lcub;eqnarray&midast;&rcub;&period;" valign="middle" src="images/begineqnarray-deltar-equiv-r2-2-m-r-a2-sigmar-b108a790ce.png" width="237.5" height="91.5"></p>
 
-If you're after efficiency, you'd probably just want to calculate and use the unique non-zero components manually, but this is convenient, easy, and correct.
+If you're after efficiency, you'd probably just want to calculate and use the unique non-zero components manually, but this is convenient, easy, and once adequately tested, hopefully correct.
 
 ## Installation
 
@@ -50,4 +50,4 @@ kerr([1,0,0,0], 1, 1)
 
 ## License
 
-Copyright (c) 2015, Ricky Reusser. ISC License.
+Copyright (c) 2015, Ricky Reusser
