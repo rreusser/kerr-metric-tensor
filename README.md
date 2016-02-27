@@ -26,10 +26,19 @@ If you're after efficiency, you'd probably just want to calculate and use the un
 $ # npm install kerr-metric-tensor
 ```
 
+```javascript
+var kerr = require('kerr-metric-tensor')
+```
+
 ## Usage
 
-#### `require('kerr-metric-tensor')(x, M, a)`
+#### `kerr.metric(x, M, a)`
 Given an `Array` or typed array containing coordinates <img alt="x &equals; &lpar;t&comma; r&comma; &bsol;theta&comma; &bsol;phi&rpar;" valign="middle" src="images/x-t-r-theta-phi-115f834ef8.png" width="121.5" height="33">, calculate the Kerr metric for a black hole with parameters <img alt="M" valign="middle" src="images/m-880e957990.png" width="25.5" height="28"> and <img alt="a" valign="middle" src="images/a-2217a6870d.png" width="15" height="28">, where <img alt="M" valign="middle" src="images/m-880e957990.png" width="25.5" height="28"> represents the mass of the black hole and <img alt="Ma" valign="middle" src="images/ma-20d367b52c.png" width="36.5" height="28"> the angular momentum.
+
+**Returns**: the sixteen components of the metric tensor. Since the tensor is symmetric, you can think of the ordering as either row-major or column-major.
+
+#### `kerr.inverseMetric(x, M, a)`
+Given an `Array` or typed array containing coordinates <img alt="x &equals; &lpar;t&comma; r&comma; &bsol;theta&comma; &bsol;phi&rpar;" valign="middle" src="images/x-t-r-theta-phi-115f834ef8.png" width="121.5" height="33">, calculate the inverse of the Kerr metric for a black hole with parameters <img alt="M" valign="middle" src="images/m-880e957990.png" width="25.5" height="28"> and <img alt="a" valign="middle" src="images/a-2217a6870d.png" width="15" height="28">, where <img alt="M" valign="middle" src="images/m-880e957990.png" width="25.5" height="28"> represents the mass of the black hole and <img alt="Ma" valign="middle" src="images/ma-20d367b52c.png" width="36.5" height="28"> the angular momentum.
 
 **Returns**: the sixteen components of the metric tensor. Since the tensor is symmetric, you can think of the ordering as either row-major or column-major.
 
@@ -52,4 +61,4 @@ kerr([1,0,0,0], 1, 1)
 
 ## License
 
-Copyright (c) 2015, Ricky Reusser
+ISC License. &copy; 2015, Ricky Reusser
